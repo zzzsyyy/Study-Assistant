@@ -49,7 +49,7 @@
 
 /**内连元素**/
 .h2w-dark .h2w__a {
-    color:#1aad16; border-color:#4d804b;
+    color:#1296db; border-color:#a2d3db
 }
 
 .h2w-dark .h2w__hr {

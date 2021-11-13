@@ -54,7 +54,7 @@
     </button>
     <button bind:tap="{{add?'onOkk':'onUpload'}}" hover-class="btn_hover">
         <view class="func_item">
-            <van-icon size="28" name="upgrade" class="itm"></van-icon>
+            <van-icon size="28" name="{{add?'passed':'upgrade'}}" class="itm"></van-icon>
             <view class="itm_text">{{add?'确认':'提交'}}</view>
         </view>
     </button>
