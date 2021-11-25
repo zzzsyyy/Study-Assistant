@@ -10,7 +10,7 @@
   use-action-slot
   >
     <view class="ss iconfont icon-sousuo" slot="action" bind:tap="onClick">
-      搜索
+      {{_t['search']}}
     </view>
 </van-search>
     

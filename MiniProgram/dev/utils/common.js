@@ -1,4 +1,4 @@
-import { pages, version, contact } from "./config";
+import { pages } from "./config";
 
 const navTo = (params, success_callback, fail_callback) => {
   let page = params.page;
@@ -58,12 +58,19 @@ const convertDetail = (datail) => {
   edDetail.chinese = datail.chinese;
   return edDetail;
 };
-const getVersion = () => {
-  return version;
-};
 
-const getContact = ()=>{
-  return contact;
-}
 
-export { navTo, convertUserInfo, getVersion, getContact, convertDetail };
+const getLang = ()=>{
+  return wx.getStorageSync('lang') || 'zh_CN'
+}; 
+
+const trans = () => { 
+  return require('/i18n/' + getLang() + '.js').lang;
+}  
+const _t = (desc) => {
+  console.log(trans()[desc])
+  return trans()[desc] || '没有翻译';
+} 
+
+
+export { navTo, convertUserInfo, convertDetail, _t };

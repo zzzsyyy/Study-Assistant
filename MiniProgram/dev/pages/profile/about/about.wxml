@@ -6,7 +6,7 @@
     学习助手
 </view>
 <view class="info">
-    version : {{version}}
+    version : {{_version}}
 </view>
 <view class="info">
     developer : zzzsy
@@ -31,7 +31,7 @@
     联系方式
 </view>
 <view class="board">
-  <view id="1" bind:tap="setPaste" class="content">E-mail : zzzsy@bk.ru</view>
-  <view id="2" bind:tap="setPaste" class="content">Wechat : zsyyy_8</view>
+  <view id="1" bind:tap="setPaste" class="content">E-mail : {{_contact.email}}</view>
+  <view id="2" bind:tap="setPaste" class="content">Wechat : {{_contact.wx_id}}</view>
 </view>
 

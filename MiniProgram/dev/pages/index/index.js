@@ -1,8 +1,10 @@
-import { navTo } from "../../utils/common";
+import { navTo, _t } from "../../utils/common";
+
 
 Page({
   data: {
-    keyword: ''
+    keyword: '',
+    _t: _t()
   },
   onChange: function (e) {
     this.setData({keyword: e.detail})
