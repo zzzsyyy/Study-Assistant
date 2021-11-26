@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "我的编辑",
-  "usingComponents": {
-    "entry-item": "/components/entry-item/entry-item"
-  }
-}

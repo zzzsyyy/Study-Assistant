@@ -1,9 +1,0 @@
-page{
-    background-color:var(--pageColorLight);
-}
-
-@media (prefers-color-scheme: dark){
-    page{
-        background-color:var(--pageColorDark);
-    }
-}
