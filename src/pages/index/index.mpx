@@ -1,0 +1,27 @@
+<template>
+  <van-search
+    value="{{ keyword }}"
+    placeholder="Entrez votre mot à rechercher"
+    bind:search="onClick"
+    bind:change="onChange"
+    field-class="field"
+    input-class="input"
+    custom-class="custom"
+    left-icon="NULL"
+    use-action-slot
+  >
+    <view class="ss iconfont icon-sousuo" slot="action" bind:tap="onClick">
+      搜索
+    </view>
+  </van-search>
+</template>
+
+<script lang="ts" src="./index.ts"></script>
+
+<script type="application/json">
+  {
+    "usingComponents": {
+      "van-search": "../../components/vant/search/index"
+    }
+  }
+</script>

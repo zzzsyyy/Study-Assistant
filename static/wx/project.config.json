@@ -1,0 +1,16 @@
+{
+  "compileType": "miniprogram",
+  "setting": {
+    "newFeature": true,
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "checkSiteMap": false,
+    "autoAudits": false
+  },
+  "appid": "wx9a42a34c9f41eb65",
+  "projectname": "studyassistant",
+  "description": " ",
+  "condition": {}
+}
