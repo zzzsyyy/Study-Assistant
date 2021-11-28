@@ -1,12 +1,12 @@
-import { createPage } from '@mpxjs/core',
-import { navTo } from ''
+import { createPage } from '@mpxjs/core'
+import { navTo } from '../../utils/common'
 
 createPage({
   data: {
     keyword: ''
   },
-  onChange: function (e: object | null) {
-    this.setData!({keyword: e?.detail})
+  onChange: function (e: any) {
+    this.keyword=e.detail
   },
   onClick: function () {
     var keyword = this.data.keyword;

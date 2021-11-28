@@ -1,20 +1,16 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "commonjs",
     "noImplicitThis": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "moduleResolution": "node",
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "baseUrl": "./",
+    "paths": {
+      "types/*": ["src/types/*"]
+    }
   },
-  "exclude": [
-    "build",
-    "dist",
-    "config"
-  ]
+  "exclude": ["build", "dist", "config"]
 }

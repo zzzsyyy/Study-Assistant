@@ -1,0 +1,1 @@
+export const request:(params:WechatMiniprogram.RequestOption)=>{}: <any>Promise
